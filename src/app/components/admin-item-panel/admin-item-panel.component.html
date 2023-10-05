@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="category"> 
+    <h3>Add item</h3>
+    <p> Add an item to your shop</p>
+    <form >
+        <label>Category</label>
+        <select [(ngModel)]="categori" name="selectcat">
+        
+            <option *ngFor="let category of categories" value="{{category}}">{{category.replace("_"," ")}}</option>
+        
+        </select>
+        <span>name</span>
+        <input [(ngModel)]="name" name="nameinput" type="text" required>
+        <span>imageURL</span>
+        <input [(ngModel)]="imageURL" name="imginput" type="url" required>
+        <span>price</span>
+        <input [(ngModel)]="price" name="prix" type="number">
+        <span>Short description</span>
+        <textarea name="short-description" [(ngModel)]="short_description" name="short descr" rows="5"></textarea>
+        <span>Full Description</span>
+        <textarea name="description" [(ngModel)]="description" name="desc" rows="15"></textarea>
+    <br>
+    </form>
+    <br>
+    <div class="buttons-zone">
+        <div class="phantom"></div>
+        <button (click)="addArticle()">Save</button>
+        <button (click)="back()">Cancel</button>
+        <div class="phantom"></div>
+    </div>
+    
+        <button class="deleto" [style.display]="deletebuttonstyle" (click)="deleteArticle()" >Delete</button>
+    </div>
+        
+     
+
+</div>

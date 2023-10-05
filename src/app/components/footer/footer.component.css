@@ -1,0 +1,37 @@
+.container{
+    width:100%;
+    background-color: #ff0202a2;
+}
+ul{
+    display: flex;
+    opacity:1;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+ul li{
+    
+    flex:1;
+}
+#li-kbir{
+    flex:4;
+    
+}
+#copyrights{
+    
+    text-align: center;
+}
+#socialIcon{
+    width:50px;
+    background-color: blue;
+}
+.clause{
+    display:grid;
+
+}
+.clause-row{
+}
+span{
+    
+    align-items: end;
+}

@@ -1,0 +1,40 @@
+header{
+    background: white;
+    padding: 0;
+    border-bottom: 1px solid #e72929;
+    background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/b3/91/1e/camp-abdelmoula.jpg?w=1200&h=-1&s=1);
+}
+a{
+    color:white;
+}
+a:hover{
+    background:#e72929;
+    color:white;
+}
+a.logo{
+    font-weight: bold;
+    padding:1em;
+}
+
+.container{
+    display: flex;
+    justify-content:space-between;
+    max-height: 400px;
+    max-width: 100%;
+}
+ul{
+    list-style-type:none ;
+    margin:0;
+    
+
+}
+ul li {
+    padding: 1em;
+    display:inline-block ;
+}
+#home{
+    
+
+    color:white;
+    flex:3;
+}

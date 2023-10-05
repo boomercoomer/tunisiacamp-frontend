@@ -1,0 +1,29 @@
+.navbar-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width:100%;
+}
+.nav-category{
+    margin:auto;
+    align-self: center;  
+    flex:content;
+    padding-top:5px;
+    height:2em;
+    background-color: #e72929;
+    color:white;
+    opacity: 0.8;
+    text-align: center;
+}
+.nav-category:hover{
+    opacity:1;
+    
+}
+a{
+    text-decoration: none;
+}
+.nav-category-button{
+    color:white;
+    font-size: large;
+}

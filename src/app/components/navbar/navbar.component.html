@@ -1,0 +1,8 @@
+<nav class="navbar-container">
+    <div class="nav-category" *ngFor="let category of categories">
+        <a href="category/{{category}}/">
+            <div class="nav-category-button">{{category.replace("_",(" ")).replace("_"," ")}}</div>
+        </a>
+    </div>
+
+</nav>

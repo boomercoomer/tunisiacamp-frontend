@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+
+<app-widget></app-widget>
+<div class="container">
+    <ul>
+        
+        <li *ngFor="let article of articles">
+            <a routerLink="/article/{{article.id}}" >
+            <img width="200px" height="200px" src="{{article.imageURL}}" alt="">
+            <div class="content">
+                <div class="name">{{article.name}}</div>
+            </div>
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <div class="product-article-footer">
+                <div class="description">
+                    <span>
+                        {{article.short_description}}
+                    </span>
+                </div>
+            </div>
+            <div class="price">
+                <span>
+                    {{article.price|currency}}
+                </span>
+            </div>
+            </a>
+        </li>
+        
+    </ul>
+
+</div>
+
